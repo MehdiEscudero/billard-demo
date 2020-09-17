@@ -1,0 +1,17 @@
+.header {
+  height: 50px;
+  width: 100%;
+  background-color: red;
+  justify-content: center;
+}
+
+.header-dark {
+  height: 200px;
+}
+
+.title {
+  justify-content: center;
+  align-items: center;
+  font-size: large;
+  font-weight: 600;
+}
