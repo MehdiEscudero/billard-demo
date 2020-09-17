@@ -5,7 +5,7 @@ class Footer extends React.Component {
     return (
       <div>
         <div>Made by Mehdi Escudero</div>
-        <button onClick>Contact</button>
+        <button>Contact</button>
       </div>
     );
   }

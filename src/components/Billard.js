@@ -1,6 +1,6 @@
 import React from "react";
 
-class Screen extends React.Component {
+class Billard extends React.Component {
   render() {
     return (
       <div>
@@ -14,4 +14,4 @@ class Screen extends React.Component {
   }
 }
 
-export default Screen;
+export default Billard;
