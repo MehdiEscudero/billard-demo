@@ -6,10 +6,10 @@ import Menu from "./Menu";
 class Billard extends React.Component {
   render() {
     return (
-      <div>
-        <Home />
+      <div className="billard">
+        <Home className="billard-content" />
 
-        <div className="billard">
+        <div className="billard-content">
           <div>Titre</div>
           <div>Images</div>
           <div>Dimensions</div>
@@ -17,7 +17,7 @@ class Billard extends React.Component {
           <div>Texte</div>
           <div>Test PR</div>
         </div>
-        <Menu />
+        <Menu className="billard-content" />
       </div>
     );
   }
