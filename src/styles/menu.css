@@ -1,3 +1,4 @@
 .menu {
   background-color: green;
+  flex-direction: column;
 }
