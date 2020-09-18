@@ -13,12 +13,16 @@ class Billard extends React.Component {
         </div>
 
         <div className="billard-content">
-          <div>Titre</div>
-          <div>Images</div>
-          <div>Dimensions</div>
-          <div>Mode de jeu</div>
-          <div>Texte</div>
-          <div>Test PR</div>
+          <div className="billard-content-title">Titre</div>
+          <div className="container-info">
+            <div className="billard-content-images">Images</div>
+            <div className="jeu">
+              <div className="billard-content-dimensions">Dimensions</div>
+              <div className="billard-content-jeu">Mode de jeu</div>
+            </div>
+          </div>
+
+          <div className="billard-content-text">Texte</div>
         </div>
       </div>
     );
