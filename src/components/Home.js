@@ -3,11 +3,7 @@ import "../styles/home.css";
 
 class Home extends React.Component {
   render() {
-    return (
-      <div className="home">
-        <button>Home</button>
-      </div>
-    );
+    return <button className="home">Home</button>;
   }
 }
 

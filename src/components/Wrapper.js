@@ -8,7 +8,7 @@ class Wrapper extends React.Component {
     return (
       <div className="wrapper">
         <Header />
-        <div className="wrapper-content">{this.props.children}</div>;
+        <div className="wrapper-content">{this.props.children}</div>
         <Footer />
       </div>
     );

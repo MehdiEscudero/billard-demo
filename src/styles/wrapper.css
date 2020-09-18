@@ -4,4 +4,5 @@
   background-color: lightgray;
   justify-content: space-between;
   flex-direction: column;
+  overflow-y: auto;
 }

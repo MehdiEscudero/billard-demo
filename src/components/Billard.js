@@ -7,7 +7,10 @@ class Billard extends React.Component {
   render() {
     return (
       <div className="billard">
-        <Home className="billard-content" />
+        <div className="billard-nav">
+          <Home className="home" />
+          <Menu className="menu" />
+        </div>
 
         <div className="billard-content">
           <div>Titre</div>
@@ -17,7 +20,6 @@ class Billard extends React.Component {
           <div>Texte</div>
           <div>Test PR</div>
         </div>
-        <Menu className="billard-content" />
       </div>
     );
   }

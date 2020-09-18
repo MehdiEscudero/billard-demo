@@ -2,6 +2,7 @@
   height: 30px;
   background-color: violet;
   flex-direction: row-reverse;
+  position: sticky;
 }
 
 .footer-content {

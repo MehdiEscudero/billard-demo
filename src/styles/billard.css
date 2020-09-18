@@ -1,8 +1,14 @@
 .billard {
   background-color: burlywood;
-  flex-direction: column;
+  flex-direction: row;
+  height: 700px;
 }
 
 .billard-content {
-  height: 500px;
+}
+
+.billard-nav {
+  flex-direction: column;
+  height: 700px;
+  background-color: lightcoral;
 }
