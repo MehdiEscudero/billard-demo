@@ -4,4 +4,6 @@
   background-color: lightgray;
   justify-content: space-around;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }

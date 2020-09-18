@@ -6,9 +6,9 @@ import Header from "./Header";
 class Wrapper extends React.Component {
   render(props) {
     return (
-      <div>
+      <div className="wrapper">
         <Header />
-        <div className="wrapper">{this.props.children}</div>;
+        <div className="wrapper-content">{this.props.children}</div>
         <Footer />
       </div>
     );

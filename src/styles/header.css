@@ -2,17 +2,25 @@
   height: 50px;
   width: 100vw;
   background-color: red;
-  justify-content: center;
-  justify-content: space-around;
+  flex-direction: row-reverse;
+}
+
+.header-content {
+  height: 50px;
+  width: 55vw;
+  background-color: lightblue;
+  justify-content: space-between;
+  margin-right: 40px;
+  align-items: center;
 }
 
 .header-dark {
-  height: 200px;
+  height: 40px;
 }
 
-.title {
+.header-title {
   justify-content: center;
   align-items: center;
-  font-size: large;
+  font-size: x-large;
   font-weight: 600;
 }
