@@ -6,3 +6,7 @@
   flex-direction: column;
   overflow-y: auto;
 }
+
+.wrapper-content {
+  flex: 1;
+}
