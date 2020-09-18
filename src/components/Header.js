@@ -6,10 +6,8 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="header-content">
-          <div className="title">Billards World</div>
-          <button onClick className="dark">
-            Dark mode
-          </button>
+          <div className="header-title">Billards World</div>
+          <button className="header-dark">Dark mode</button>
         </div>
       </div>
     );
