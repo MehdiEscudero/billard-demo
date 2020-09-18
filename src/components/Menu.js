@@ -1,14 +1,15 @@
 import React from "react";
+import "../styles/menu.css";
 
 class Menu extends React.Component {
   render() {
     return (
-      <div>
+      <div className="menu">
         <div>Menu</div>
-        <button onClick>Français</button>
-        <button onClick>Americain</button>
-        <button onClick>Anglais</button>
-        <button onClick>Snooker</button>
+        <button>Français</button>
+        <button>Americain</button>
+        <button>Anglais</button>
+        <button>Snooker</button>
       </div>
     );
   }
