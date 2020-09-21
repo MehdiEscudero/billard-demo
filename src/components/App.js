@@ -6,6 +6,18 @@ import Billard from "./Billard";
 
 class App extends React.Component {
   state = { selectedBillard: null };
+  handleClick(value) {
+    if (value === null) {
+      this.setState({
+        selectedBillard: null,
+      });
+    } else {
+      this.setState({
+        selectedBillard: data[value].name,
+      });
+      console.log(`Clicked on ${data[value].name}`);
+    }
+  }
   render() {
     return (
       <Wrapper data={data}>
