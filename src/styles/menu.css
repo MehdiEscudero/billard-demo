@@ -1,5 +1,5 @@
 .menu {
-  background-color: green;
+  background-color: #d6e0f0;
   flex-direction: column;
   flex: 1;
   justify-content: space-around;
@@ -7,5 +7,9 @@
 }
 
 .btn {
-  border-radius: 50%;
+  cursor: pointer;
+  border-radius: 100%;
+  border: none;
+  padding: 50px;
+  font-size: 22px;
 }

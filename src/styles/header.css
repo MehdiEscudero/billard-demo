@@ -1,7 +1,7 @@
 .header {
   height: 50px;
   width: 100vw;
-  background-color: red;
+  background-color: #8d93ab;
   justify-content: center;
   align-self: center;
 }
@@ -12,7 +12,7 @@
   top: 0;
   right: 10px;
   width: 100px;
-  border: 3px solid #73ad21;
+  border: 3px solid #d6e0f0;
 }
 
 .header-title {
@@ -20,4 +20,5 @@
   align-items: center;
   font-size: x-large;
   font-weight: 600;
+  color: white;
 }
