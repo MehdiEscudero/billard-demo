@@ -1,11 +1,15 @@
 .billard {
-  background-color: burlywood;
   display: flex;
   flex: 1;
 }
 
 .billard-content {
+  flex: 1;
   flex-direction: column;
+  background-image: url("https://i.pinimg.com/originals/f2/1f/9c/f21f9c91a68189c6958def13bc693704.jpg");
+  color: antiquewhite;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-info {
@@ -37,29 +41,3 @@
 
 .billard-content-text {
 }
-
-/* .billard {
-  display: grid;
-  grid-template: auto 1fr auto / auto 1fr auto;
-}
-
-.billard-content-title {
-  padding: 2rem;
-  grid-column: 1 / 4;
-}
-
-.ex5 .left-side {
-  grid-column: 1 / 2;
-}
-
-.ex5 main {
-  grid-column: 2 / 3;
-}
-
-.ex5 .right-side {
-  grid-column: 3 / 4;
-}
-
-.ex5 footer {
-  grid-column: 1 / 4;
-} */
