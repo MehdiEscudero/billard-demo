@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Billard français",
+    "Img": "",
+    "Dimensions": "",
+    "jeu": [
+      "Carambole",
+      "Quille",
+      "Libre",
+      "la Bande",
+      "Le 3 bandes",
+      "Le cadre",
+      "Le casin",
+      "Le 4 billes",
+      "Le 5 quilles",
+      "Le bouchon"
+    ],
+    "text": "blabla"
+  },
+
+  {
+    "name": "Billard americain",
+    "Img": "",
+    "Dimensions": "280 x 153cm",
+    "jeu": ["8"],
+    "text": "blabla"
+  },
+
+  {
+    "name": "Billard anglais",
+    "Img": "",
+    "Dimensions": "",
+    "jeu": ["8"],
+    "text": "blabla"
+  },
+
+  {
+    "name": "Snooker",
+    "Img": "",
+    "Dimensions": "357 x 178cm",
+    "jeu": ["Carambole"],
+    "text": "blabla"
+  }
+]

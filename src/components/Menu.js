@@ -6,10 +6,11 @@ class Menu extends React.Component {
     return (
       <div className="menu">
         <div>Menu</div>
-        <button className="btn">Français</button>
-        <button className="btn">Americain</button>
-        <button className="btn">Anglais</button>
-        <button className="btn">Snooker</button>
+        {this.props.data.map((element, index) => (
+          <button className="btn" key={index}>
+            {element.name}
+          </button>
+        ))}
       </div>
     );
   }

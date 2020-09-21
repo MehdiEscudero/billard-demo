@@ -7,7 +7,7 @@ class Footer extends React.Component {
       <div className="footer">
         <div className="footer-content">
           <div>Made by Mehdi Escudero</div>
-          <button>Contact</button>
+          <button className="contact">Contact</button>
         </div>
       </div>
     );
