@@ -1,8 +1,8 @@
 [
   {
     "name": "Billard français",
-    "Img": "",
-    "Dimensions": "",
+    "img": "",
+    "dimensions": "",
     "jeu": [
       "Carambole",
       "Quille",
@@ -20,24 +20,24 @@
 
   {
     "name": "Billard americain",
-    "Img": "",
-    "Dimensions": "280 x 153cm",
+    "img": "",
+    "dimensions": "280 x 153cm",
     "jeu": ["8"],
     "text": "blabla"
   },
 
   {
     "name": "Billard anglais",
-    "Img": "",
-    "Dimensions": "",
+    "img": "",
+    "dimensions": "",
     "jeu": ["8"],
     "text": "blabla"
   },
 
   {
     "name": "Snooker",
-    "Img": "",
-    "Dimensions": "357 x 178cm",
+    "img": "",
+    "dimensions": "357 x 178cm",
     "jeu": ["Carambole"],
     "text": "blabla"
   }

@@ -13,8 +13,15 @@ class Wrapper extends React.Component {
 
         <div className="wrapper-content">
           <div className="billard-nav">
-            <Home className="home" />
-            <Menu className="menu" data={this.props.data} />
+            <Home
+              className="home"
+              handleClick={(valeur) => this.props.handleClick(valeur)}
+            />
+            <Menu
+              className="menu"
+              data={this.props.data}
+              handleClick={(valeur) => this.props.handleClick(valeur)}
+            />
           </div>
           {this.props.children}
         </div>

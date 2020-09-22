@@ -8,10 +8,10 @@ class Billard extends React.Component {
         <div className="billard-content">
           <div className="billard-content-title">{this.props.name}</div>
           <div className="container-info">
-            <div className="billard-content-images">{this.props.Img}</div>
+            <div className="billard-content-images">{this.props.img}</div>
             <div className="jeu">
               <div className="billard-content-dimensions">
-                {this.props.Dimensions}
+                {this.props.dimensions}
               </div>
               <div className="billard-content-jeu">{this.props.jeu}</div>
             </div>

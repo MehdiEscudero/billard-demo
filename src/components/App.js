@@ -24,14 +24,26 @@ class App extends React.Component {
         billardList: data,
         loading: false,
       });
-    }, 3000);
+    }, 1000);
   }
   render() {
     return this.state.loading ? (
       <div className="loading">Loading...</div>
     ) : (
-      <Wrapper data={data}>
-        <Billard />
+      <Wrapper
+        handleClick={(valeur) => this.handleClick(valeur)}
+        data={this.state.billardList}
+      >
+        {this.state.selectedBillard === null ? (
+          <p>home</p>
+        ) : (
+          <Billard
+            name={this.state.selectedBillard.name}
+            text={this.state.selectedBillard.text}
+            dimensions={this.state.selectedBillard.dimensions}
+            img={this.state.selectedBillard.img}
+          />
+        )}
       </Wrapper>
     );
   }
