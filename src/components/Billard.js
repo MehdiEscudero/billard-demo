@@ -6,16 +6,18 @@ class Billard extends React.Component {
     return (
       <div className="billard">
         <div className="billard-content">
-          <div className="billard-content-title">Titre</div>
+          <div className="billard-content-title">{this.props.name}</div>
           <div className="container-info">
-            <div className="billard-content-images">Images</div>
+            <div className="billard-content-images">{this.props.Img}</div>
             <div className="jeu">
-              <div className="billard-content-dimensions">Dimensions</div>
-              <div className="billard-content-jeu">Mode de jeu</div>
+              <div className="billard-content-dimensions">
+                {this.props.Dimensions}
+              </div>
+              <div className="billard-content-jeu">{this.props.jeu}</div>
             </div>
           </div>
 
-          <div className="billard-content-text">Texte</div>
+          <div className="billard-content-text">{this.props.text}</div>
         </div>
       </div>
     );

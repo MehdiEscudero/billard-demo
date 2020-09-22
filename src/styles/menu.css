@@ -4,12 +4,15 @@
   flex: 1;
   justify-content: space-around;
   align-items: center;
+  font-size: x-large;
 }
 
 .btn {
   cursor: pointer;
   border-radius: 100%;
   border: none;
-  padding: 50px;
-  font-size: 22px;
+
+  font-size: 18px;
+  height: 120px;
+  width: 120px;
 }

@@ -9,7 +9,7 @@
 
 .contact {
   height: 30px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 10px;
   width: 100px;

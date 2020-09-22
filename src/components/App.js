@@ -3,23 +3,33 @@ import data from "../mock.json";
 import "../styles/common.css";
 import Wrapper from "./Wrapper";
 import Billard from "./Billard";
+import "../styles/app.css";
 
 class App extends React.Component {
-  state = { selectedBillard: null };
+  state = {
+    selectedBillard: null,
+    billardList: null,
+    loading: true,
+  };
+
   handleClick(value) {
-    if (value === null) {
+    this.setState({
+      selectedBillard: value,
+    });
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
       this.setState({
-        selectedBillard: null,
+        billardList: data,
+        loading: false,
       });
-    } else {
-      this.setState({
-        selectedBillard: data[value].name,
-      });
-      console.log(`Clicked on ${data[value].name}`);
-    }
+    }, 3000);
   }
   render() {
-    return (
+    return this.state.loading ? (
+      <div className="loading">Loading...</div>
+    ) : (
       <Wrapper data={data}>
         <Billard />
       </Wrapper>

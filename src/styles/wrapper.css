@@ -14,3 +14,10 @@
 body {
   margin: 0;
 }
+
+.loading {
+  color: #1e1208;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
