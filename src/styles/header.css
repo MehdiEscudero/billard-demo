@@ -2,18 +2,21 @@
   height: 50px;
   width: 100vw;
   background-color: #393b44;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-.header:header-dark {
+.header-dark {
   height: 40px;
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 10px;
   width: 100px;
   border: 3px solid #d6e0f0;
 }
 
-.header:header-title {
+.header-title {
   justify-content: center;
   align-items: center;
   font-size: x-large;

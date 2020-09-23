@@ -3,7 +3,6 @@ import data from "../mock.json";
 import "../styles/common.css";
 import Wrapper from "./Wrapper";
 import Billard from "./Billard";
-import "../styles/app.css";
 
 class App extends React.Component {
   state = {
@@ -35,7 +34,11 @@ class App extends React.Component {
         data={this.state.billardList}
       >
         {this.state.selectedBillard === null ? (
-          <p>home</p>
+          <img
+            className="billard-content"
+            src="https://i.pinimg.com/originals/f2/1f/9c/f21f9c91a68189c6958def13bc693704.jpg"
+            alt="fond pour home"
+          />
         ) : (
           <Billard
             name={this.state.selectedBillard.name}
