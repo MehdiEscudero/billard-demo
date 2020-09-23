@@ -26,7 +26,7 @@ class Wrapper extends React.Component {
           {this.props.children}
         </div>
 
-        <Footer />
+        <Footer handleModal={(valeur) => this.props.handleModal(valeur)} />
       </div>
     );
   }

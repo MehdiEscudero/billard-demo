@@ -3,6 +3,7 @@ import data from "../mock.json";
 import "../styles/common.css";
 import Wrapper from "./Wrapper";
 import Billard from "./Billard";
+import Modal from "./modal/Modal";
 
 class App extends React.Component {
   state = {
@@ -25,7 +26,7 @@ class App extends React.Component {
   }
 
   closeModalHandler() {
-    setModal = false;
+    let setModal = false;
   }
 
   componentDidMount() {
@@ -58,6 +59,12 @@ class App extends React.Component {
             img={this.state.selectedBillard.img}
           />
         )}
+        {this.state.modal ? (
+          <Modal
+            modal={this.modal}
+            closeModalHandler={this.closeModalHandler}
+          />
+        ) : null}
       </Wrapper>
     );
   }
