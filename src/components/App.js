@@ -9,12 +9,23 @@ class App extends React.Component {
     selectedBillard: null,
     billardList: null,
     loading: true,
+    modal: false,
   };
 
   handleClick(value) {
     this.setState({
       selectedBillard: value,
     });
+  }
+
+  handleModal() {
+    this.setState({
+      modal: !this.state.modal,
+    });
+  }
+
+  closeModalHandler() {
+    setModal = false;
   }
 
   componentDidMount() {
