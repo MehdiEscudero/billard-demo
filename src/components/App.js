@@ -40,6 +40,7 @@ class App extends React.Component {
       <Wrapper
         handleClick={(valeur) => this.handleClick(valeur)}
         data={this.state.billardList}
+        handleModal={() => this.handleModal()}
       >
         {this.state.selectedBillard === null ? (
           <img
@@ -55,12 +56,7 @@ class App extends React.Component {
             img={this.state.selectedBillard.img}
           />
         )}
-        {this.state.modal ? (
-          <Modal
-            modal={this.state.modal}
-            handleModal={() => this.handleModal()}
-          />
-        ) : null}
+        {this.state.modal ? <Modal modal={this.state.modal} /> : null}
       </Wrapper>
     );
   }
