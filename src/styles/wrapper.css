@@ -4,11 +4,12 @@
   background-color: lightgray;
   justify-content: space-between;
   flex-direction: column;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .wrapper-content {
   flex: 1;
+  overflow: scroll;
 }
 
 body {
