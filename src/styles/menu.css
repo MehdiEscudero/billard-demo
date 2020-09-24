@@ -5,6 +5,7 @@
   justify-content: space-around;
   align-items: center;
   font-size: x-large;
+  overflow: scroll;
 }
 
 .btn {
@@ -15,4 +16,9 @@
   font-size: 18px;
   height: 120px;
   width: 120px;
+}
+
+.btn:hover {
+  background-color: #383c43;
+  color: white;
 }

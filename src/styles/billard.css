@@ -6,8 +6,9 @@
 .billard-content {
   flex: 1;
   flex-direction: column;
+  background-color: whitesmoke;
 
-  color: antiquewhite;
+  color: #383c43;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -29,18 +30,27 @@
 
 .billard-content-title {
   font-size: xx-large;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .billard-content-images {
   size: 450px 250px;
+  margin-top: 100px;
+  margin-left: 50px;
 }
 
 .billard-content-dimensions {
   font-size: x-large;
+  margin-top: 100px;
+  margin-left: 100px;
 }
 
 .billard-content-jeu {
 }
 
 .billard-content-text {
+  width: 800px;
+  margin-left: 50px;
+  margin-top: 100px;
 }
