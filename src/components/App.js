@@ -25,10 +25,6 @@ class App extends React.Component {
     });
   }
 
-  closeModalHandler() {
-    let setModal = false;
-  }
-
   componentDidMount() {
     setTimeout(() => {
       this.setState({
@@ -61,8 +57,8 @@ class App extends React.Component {
         )}
         {this.state.modal ? (
           <Modal
-            modal={this.modal}
-            closeModalHandler={this.closeModalHandler}
+            modal={this.state.modal}
+            handleModal={() => this.handleModal()}
           />
         ) : null}
       </Wrapper>

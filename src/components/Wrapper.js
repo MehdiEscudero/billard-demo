@@ -7,10 +7,10 @@ import Menu from "./Menu";
 
 class Wrapper extends React.Component {
   render() {
+    console.log(this.props);
     return (
       <div className="wrapper">
         <Header />
-
         <div className="wrapper-content">
           <div className="billard-nav">
             <Home
@@ -25,7 +25,6 @@ class Wrapper extends React.Component {
           </div>
           {this.props.children}
         </div>
-
         <Footer handleModal={(valeur) => this.props.handleModal(valeur)} />
       </div>
     );
