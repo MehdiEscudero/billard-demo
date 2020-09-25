@@ -5,7 +5,6 @@ class Menu extends React.Component {
   render() {
     return (
       <div className="menu">
-        <div>Menu</div>
         {this.props.data.map((element, index) => (
           <button
             className="btn"

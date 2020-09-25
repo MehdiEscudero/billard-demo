@@ -3,4 +3,12 @@
   background-color: #d6e0f0;
   cursor: pointer;
   font-size: large;
+  border: none;
+}
+
+.iconHome {
+  height: 50px;
+  width: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
