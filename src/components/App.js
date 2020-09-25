@@ -4,6 +4,7 @@ import "../styles/common.css";
 import Wrapper from "./Wrapper";
 import Billard from "./Billard";
 import Modal from "./modal/Modal";
+import fond from "../images/salle-ancienne.jpg";
 
 class App extends React.Component {
   state = {
@@ -43,11 +44,7 @@ class App extends React.Component {
         handleModal={() => this.handleModal()}
       >
         {this.state.selectedBillard === null ? (
-          <img
-            className="billard-content"
-            src="https://i.pinimg.com/originals/f2/1f/9c/f21f9c91a68189c6958def13bc693704.jpg"
-            alt="fond pour home"
-          />
+          <img className="billard-content" src={fond} alt="fond pour home" />
         ) : (
           <Billard
             name={this.state.selectedBillard.name}
