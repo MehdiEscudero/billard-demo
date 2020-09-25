@@ -1,11 +1,11 @@
 .menu {
   background-color: #8d93ab;
-  flex-direction: column;
-  flex: 1;
+
   justify-content: space-around;
   align-items: center;
   font-size: x-large;
   overflow: scroll;
+  flex-wrap: wrap;
 }
 
 .btn {

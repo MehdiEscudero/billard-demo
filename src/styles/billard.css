@@ -4,13 +4,12 @@
 }
 
 .billard-content {
-  flex: 1;
-  flex-direction: column;
   background-color: whitesmoke;
-
   color: #383c43;
   background-repeat: no-repeat;
   background-size: cover;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 
 .container-info {
@@ -30,7 +29,6 @@
 
 .billard-content-title {
   font-size: xx-large;
-  justify-content: center;
   margin-top: 20px;
 }
 
