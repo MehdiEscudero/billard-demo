@@ -1,4 +1,6 @@
 .modal {
+  height: 100%;
+  width: 100%;
   z-index: 1;
   position: absolute;
   top: auto;
@@ -10,17 +12,20 @@
 .modal-wrapper {
   background: cornsilk;
   width: 80%;
-  max-width: 800px;
+  max-width: 600px;
   margin: 4rem auto;
+  flex-direction: column;
+  height: 300px;
 }
 
 .modal-header {
-  background: darkgreen;
+  background: #383c43;
+  height: 1px;
   color: darkgrey;
   padding: 1rem;
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: space-between;
 }
 
 .modal-header span {
@@ -30,10 +35,12 @@
 
 .modal-content {
   padding: 1.5rem 1rem;
+  width: 500px;
 }
 
-.moadal-body {
+.modal-body {
   margin-bottom: 1rem;
+  flex-direction: column;
 }
 
 .moadal-body h4 {
@@ -54,7 +61,7 @@
   font-size: 1rem;
   margin-left: auto;
   padding: 0.5 rem 1.8rem;
-  background: coral;
+  background: #8d94ab;
   color: #ffffff;
   border: none;
   outline: none;
