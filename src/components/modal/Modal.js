@@ -10,7 +10,7 @@ class Modal extends React.Component {
             <span className="close-modal-btn">X</span>
           </div>
           <div className="modal-content">
-            <div className="modal-body">
+            <form className="modal-body">
               <span>
                 Are you a player?
                 <input type="checkbox" id="yes" name="no" />
@@ -52,7 +52,7 @@ class Modal extends React.Component {
                   Submit
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
