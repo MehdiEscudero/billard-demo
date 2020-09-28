@@ -13,7 +13,7 @@ class Modal extends React.Component {
             <div className="modal-body">
               <span>
                 Are you a player?
-                <input type="checkbox" id="yes" name="no" checked />
+                <input type="checkbox" id="yes" name="no" />
                 <label for="yes">Yes</label>
                 <input type="checkbox" id="no" name="no" />
                 <label for="no">No</label>
@@ -40,6 +40,7 @@ class Modal extends React.Component {
                 placeholder="Email"
               ></input>
               <textarea
+                className="textarea"
                 id="comment"
                 name="comment"
                 placeholder="Type here..."
@@ -47,7 +48,9 @@ class Modal extends React.Component {
                 cols="33"
               ></textarea>
               <div className="modal-footer">
-                <button className="btn-submit">Submit</button>
+                <button type="submit" className="btn-submit">
+                  Submit
+                </button>
               </div>
             </div>
           </div>
