@@ -53,7 +53,9 @@ class App extends React.Component {
             img={this.state.selectedBillard.img}
           />
         )}
-        {this.state.modal ? <Modal modal={this.state.modal} /> : null}
+        {this.state.modal ? (
+          <Modal handleModal={() => this.handleModal()} />
+        ) : null}
       </Wrapper>
     );
   }

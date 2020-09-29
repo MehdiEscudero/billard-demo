@@ -2,7 +2,12 @@ import React from "react";
 import "../modal/modal.css";
 
 class Modal extends React.Component {
+  alerte() {
+    alert("a");
+  }
+
   render() {
+    console.log(this.props);
     return (
       <div className="modal">
         <div className="modal-wrapper">
@@ -54,9 +59,8 @@ class Modal extends React.Component {
               ></textarea>
               <div className="modal-footer">
                 <div>
-                  <script>function myFunction() {alert("Yooooooo!")}</script>
                   <button
-                    onClick="myFunction()"
+                    onClick={() => this.alerte()}
                     type="submit"
                     className="btn-submit"
                   >
