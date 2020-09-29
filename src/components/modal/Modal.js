@@ -7,7 +7,12 @@ class Modal extends React.Component {
       <div className="modal">
         <div className="modal-wrapper">
           <div className="modal-header">
-            <span className="close-modal-btn">X</span>
+            <button
+              onClick={() => this.props.handleModal(false)}
+              className="close-modal-btn"
+            >
+              X
+            </button>
           </div>
           <div className="modal-content">
             <form className="modal-body">
@@ -48,9 +53,16 @@ class Modal extends React.Component {
                 cols="33"
               ></textarea>
               <div className="modal-footer">
-                <button type="submit" className="btn-submit">
-                  Submit
-                </button>
+                <div>
+                  <script>function myFunction() {alert("Yooooooo!")}</script>
+                  <button
+                    onClick="myFunction()"
+                    type="submit"
+                    className="btn-submit"
+                  >
+                    Submit
+                  </button>
+                </div>
               </div>
             </form>
           </div>
