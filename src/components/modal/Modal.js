@@ -10,8 +10,40 @@ class Modal extends React.Component {
     comment: null,
   };
   handleChange(event) {
-    this.setState({ value: event.target.value });
-    console.log(event.target.value);
+    this.setState({
+      value: event.target.value,
+    });
+    console.log(event.target);
+  }
+
+  handleChangePlayer(event) {
+    this.setState({
+      player: event.target.value,
+    });
+  }
+
+  handleChangeBillard(event) {
+    this.setState({
+      billard: event.target.value,
+    });
+  }
+
+  handleChangePseudo(event) {
+    this.setState({
+      pseudo: event.target.value,
+    });
+  }
+
+  handleChangeEmail(event) {
+    this.setState({
+      email: event.target.value,
+    });
+  }
+
+  handleChangeComment(event) {
+    this.setState({
+      comment: event.target.value,
+    });
   }
 
   handleSubmit(event) {
@@ -49,22 +81,22 @@ class Modal extends React.Component {
                 <option value="snooker">Snooker</option>
               </select>
 
-              <input
-                onChange={(event) => this.handleChange(event, "pseudo")}
+              <inputyes
+                onChange={(event) => this.handleChangePseudo(event)}
                 type="pseudo"
                 id="pseudo"
                 name="pseudo"
                 placeholder="Pseudo"
-              ></input>
+              ></inputyes>
               <input
-                onChange={(event) => this.handleChange(event, "email")}
+                onChange={(event) => this.handleChangeEmail(event)}
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
               ></input>
               <textarea
-                onChange={(event) => this.handleChange(event, "textarea")}
+                onChange={(event) => this.handleChangeComment(event)}
                 className="textarea"
                 id="comment"
                 name="comment"
