@@ -2,10 +2,24 @@ import React from "react";
 import "../modal/modal.css";
 
 class Modal extends React.Component {
-  alerte() {
-    alert("a");
+  // alerte() {
+  //   alert("Yoo");
+  // }
+  state = {
+    player: null,
+    billard: null,
+    pseudo: null,
+    email: null,
+    comment: null,
+  };
+  handleChange(event) {
+    this.setState({ value: event.target.value });
+    console.log(event.target.value);
   }
 
+  handleSubmit(event) {
+    this.alerte("It's all in baby!" + event.state.value);
+  }
   render() {
     console.log(this.props);
     return (
@@ -38,6 +52,7 @@ class Modal extends React.Component {
               </select>
 
               <input
+                onChange={(event) => this.handleChange(event)}
                 type="pseudo"
                 id="pseudo"
                 name="pseudo"
@@ -60,7 +75,7 @@ class Modal extends React.Component {
               <div className="modal-footer">
                 <div>
                   <button
-                    onClick={() => this.alerte()}
+                    onClick={(event) => this.handleSubmit(event)}
                     type="submit"
                     className="btn-submit"
                   >
