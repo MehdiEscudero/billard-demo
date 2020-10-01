@@ -7,7 +7,12 @@ class Header extends React.Component {
       <div className="header">
         <div className="header-content">
           <div className="header-title">Billards World</div>
-          <button className="header-dark">Dark mode</button>
+          <button
+            onClick={() => this.props.handleDark(false)}
+            className="header-dark"
+          >
+            Dark mode
+          </button>
         </div>
       </div>
     );

@@ -12,6 +12,7 @@ class App extends React.Component {
     billardList: null,
     loading: true,
     modal: false,
+    dark: false,
   };
 
   handleClick(value) {
@@ -23,6 +24,12 @@ class App extends React.Component {
   handleModal() {
     this.setState({
       modal: !this.state.modal,
+    });
+  }
+
+  handleDark() {
+    this.setState({
+      dark: !this.state.dark,
     });
   }
 
@@ -42,6 +49,7 @@ class App extends React.Component {
         handleClick={(valeur) => this.handleClick(valeur)}
         data={this.state.billardList}
         handleModal={() => this.handleModal()}
+        handleDark={() => this.handleDark()}
       >
         {this.state.selectedBillard === null ? (
           <img className="billard-content" src={fond} alt="fond pour home" />

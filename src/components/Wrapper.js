@@ -10,7 +10,7 @@ class Wrapper extends React.Component {
     console.log(this.props);
     return (
       <div className="wrapper">
-        <Header />
+        <Header handleDark={(valeur) => this.props.handleDark(valeur)} />
         <div className="wrapper-content">
           <div className="billard-nav">
             <Home

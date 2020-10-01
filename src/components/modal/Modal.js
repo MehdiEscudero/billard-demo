@@ -2,9 +2,6 @@ import React from "react";
 import "../modal/modal.css";
 
 class Modal extends React.Component {
-  // alerte() {
-  //   alert("Yoo");
-  // }
   state = {
     player: null,
     billard: null,
@@ -18,7 +15,8 @@ class Modal extends React.Component {
   }
 
   handleSubmit(event) {
-    this.alerte("It's all in baby!" + event.state.value);
+    console.log(this.state);
+    alert("It's all in baby!" + this.state.value);
   }
   render() {
     console.log(this.props);
@@ -34,7 +32,7 @@ class Modal extends React.Component {
             </button>
           </div>
           <div className="modal-content">
-            <form className="modal-body">
+            <div className="modal-body">
               <span>
                 Are you a player?
                 <input type="checkbox" id="yes" name="no" />
@@ -52,19 +50,21 @@ class Modal extends React.Component {
               </select>
 
               <input
-                onChange={(event) => this.handleChange(event)}
+                onChange={(event) => this.handleChange(event, "pseudo")}
                 type="pseudo"
                 id="pseudo"
                 name="pseudo"
                 placeholder="Pseudo"
               ></input>
               <input
+                onChange={(event) => this.handleChange(event, "email")}
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
               ></input>
               <textarea
+                onChange={(event) => this.handleChange(event, "textarea")}
                 className="textarea"
                 id="comment"
                 name="comment"
@@ -76,14 +76,14 @@ class Modal extends React.Component {
                 <div>
                   <button
                     onClick={(event) => this.handleSubmit(event)}
-                    type="submit"
+                    //type="submit"
                     className="btn-submit"
                   >
                     Submit
                   </button>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </div>
