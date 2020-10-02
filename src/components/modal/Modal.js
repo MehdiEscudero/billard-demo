@@ -47,13 +47,24 @@ class Modal extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log(this.state);
-    alert("It's all in baby!" + this.state.value);
+    console.log("ici", this.state);
+    alert(
+      "It's all in baby!" +
+        this.state.player +
+        " " +
+        this.state.billard +
+        " " +
+        this.state.pseudo +
+        " " +
+        this.state.email +
+        " " +
+        this.state.comment
+    );
   }
   render() {
     console.log(this.props);
     return (
-      <div className="modal">
+      <div onClick={() => this.props.handleModal(false)} className="modal">
         <div className="modal-wrapper">
           <div className="modal-header">
             <button
@@ -73,13 +84,15 @@ class Modal extends React.Component {
                 <label for="no">No</label>
               </span>
 
-              <select name="billards" id="billard-select">
-                <option value="">--Choose your billard--</option>
-                <option value="francais">Français</option>
-                <option value="americain">Americain</option>
-                <option value="anglais">Anglais</option>
-                <option value="snooker">Snooker</option>
-              </select>
+              <label>
+                Choose your billard
+                <select onChange={(event) => this.handleChangeBillard(event)}>
+                  <option value="francais">Français</option>
+                  <option value="americain">Americain</option>
+                  <option value="anglais">Anglais</option>
+                  <option value="snooker">Snooker</option>
+                </select>
+              </label>
 
               <inputyes
                 onChange={(event) => this.handleChangePseudo(event)}
