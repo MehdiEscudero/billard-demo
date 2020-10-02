@@ -47,7 +47,8 @@ class Modal extends React.Component {
   }
 
   handleSubmit(event) {
-    console.log("ici", this.state);
+    console.log("ici");
+    console.log(this.state);
     alert(
       "It's all in baby!" +
         this.state.player +
@@ -63,8 +64,15 @@ class Modal extends React.Component {
   }
   render() {
     console.log(this.props);
+    console.table(
+      !this.state.player &&
+        !this.state.billard &&
+        !this.state.pseudo &&
+        !this.state.email &&
+        !this.state.comment
+    );
     return (
-      <div onClick={() => this.props.handleModal(false)} className="modal">
+      <div className="modal">
         <div className="modal-wrapper">
           <div className="modal-header">
             <button
@@ -94,13 +102,13 @@ class Modal extends React.Component {
                 </select>
               </label>
 
-              <inputyes
+              <input
                 onChange={(event) => this.handleChangePseudo(event)}
                 type="pseudo"
                 id="pseudo"
                 name="pseudo"
                 placeholder="Pseudo"
-              ></inputyes>
+              ></input>
               <input
                 onChange={(event) => this.handleChangeEmail(event)}
                 type="email"
@@ -120,6 +128,13 @@ class Modal extends React.Component {
               <div className="modal-footer">
                 <div>
                   <button
+                    disabled={
+                      !this.state.player ||
+                      !this.state.billard ||
+                      !this.state.pseudo ||
+                      !this.state.email ||
+                      !this.state.comment
+                    }
                     onClick={(event) => this.handleSubmit(event)}
                     //type="submit"
                     className="btn-submit"
