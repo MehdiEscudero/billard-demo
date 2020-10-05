@@ -98,6 +98,8 @@ class Modal extends React.Component {
               <label>
                 Choose your billard
                 <select onChange={(event) => this.handleChangeBillard(event)}>
+                  <option value="billard">--Choose your billard--</option>
+
                   <option value="francais">Français</option>
                   <option value="americain">Americain</option>
                   <option value="anglais">Anglais</option>
