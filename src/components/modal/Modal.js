@@ -72,11 +72,11 @@ class Modal extends React.Component {
     );
     return (
       <div className="modal">
-        <div onClick={() => this.props.handleModal(false)} className="forclick">
+        <div className="forclick">
           <div className="modal-wrapper">
             <div className="modal-header">
               <button
-                onClick={() => this.props.handleModal(false)}
+                onClick={() => this.props.handleModal()}
                 className="close-modal-btn"
               >
                 X
