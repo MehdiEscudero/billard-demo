@@ -50,15 +50,14 @@ class Modal extends React.Component {
     console.log("ici");
     console.log(this.state);
     alert(
-      "It's all in baby!" +
-        this.state.player +
-        " " +
+      this.state.player +
+        "  " +
         this.state.billard +
-        " " +
+        "  " +
         this.state.pseudo +
-        " " +
+        "  " +
         this.state.email +
-        " " +
+        "  " +
         this.state.comment
     );
   }
@@ -84,11 +83,11 @@ class Modal extends React.Component {
           </div>
           <div className="modal-content">
             <div className="modal-body">
-              <span>
+              <span onChange={(event) => this.handleChangePlayer(event)}>
                 Are you a player?
-                <input type="checkbox" id="yes" name="no" />
+                <input type="radio" id="yes" name="positive" value="yes" />
                 <label for="yes">Yes</label>
-                <input type="checkbox" id="no" name="no" />
+                <input type="radio" id="no" name="negative" value="no" />
                 <label for="no">No</label>
               </span>
 
