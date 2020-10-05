@@ -9,40 +9,10 @@ class Modal extends React.Component {
     email: null,
     comment: null,
   };
-  handleChange(event) {
-    this.setState({
-      value: event.target.value,
-    });
-    console.log(event.target);
-  }
 
-  handleChangePlayer(event) {
+  handleChange(event, state) {
     this.setState({
-      player: event.target.value,
-    });
-  }
-
-  handleChangeBillard(event) {
-    this.setState({
-      billard: event.target.value,
-    });
-  }
-
-  handleChangePseudo(event) {
-    this.setState({
-      pseudo: event.target.value,
-    });
-  }
-
-  handleChangeEmail(event) {
-    this.setState({
-      email: event.target.value,
-    });
-  }
-
-  handleChangeComment(event) {
-    this.setState({
-      comment: event.target.value,
+      [state]: event.target.value,
     });
   }
 
@@ -87,7 +57,7 @@ class Modal extends React.Component {
           </div>
           <div className="modal-content">
             <div className="modal-body">
-              <span onChange={(event) => this.handleChangePlayer(event)}>
+              <span onChange={(event) => this.handleChange(event, "player")}>
                 Are you a player?
                 <input type="radio" id="yes" name="positive" value="yes" />
                 <label for="yes">Yes</label>
@@ -97,7 +67,9 @@ class Modal extends React.Component {
 
               <label>
                 Choose your billard
-                <select onChange={(event) => this.handleChangeBillard(event)}>
+                <select
+                  onChange={(event) => this.handleChange(event, "billard")}
+                >
                   <option value="billard">--Choose your billard--</option>
 
                   <option value="francais">Français</option>
@@ -108,21 +80,21 @@ class Modal extends React.Component {
               </label>
 
               <input
-                onChange={(event) => this.handleChangePseudo(event)}
+                onChange={(event) => this.handleChange(event, "pseudo")}
                 type="pseudo"
                 id="pseudo"
                 name="pseudo"
                 placeholder="Pseudo"
               ></input>
               <input
-                onChange={(event) => this.handleChangeEmail(event)}
+                onChange={(event) => this.handleChange(event, "email")}
                 type="email"
                 id="email"
                 name="email"
                 placeholder="Email"
               ></input>
               <textarea
-                onChange={(event) => this.handleChangeComment(event)}
+                onChange={(event) => this.handleChange(event, "comment")}
                 className="textarea"
                 id="comment"
                 name="comment"
@@ -142,6 +114,7 @@ class Modal extends React.Component {
                     }
                     onClick={(event) => this.handleSubmit(event)}
                     //type="submit"
+                    id="button"
                     className="btn-submit"
                   >
                     Submit

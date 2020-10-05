@@ -7,13 +7,18 @@ import Modal from "./modal/Modal";
 import fond from "../images/salle-ancienne.jpg";
 
 class App extends React.Component {
-  state = {
-    selectedBillard: null,
-    billardList: null,
-    loading: true,
-    modal: false,
-    dark: false,
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedBillard: null,
+      billardList: null,
+      loading: true,
+      modal: false,
+      dark: false,
+    };
+
+    this.handleModal = this.handleModal.bind(this);
+  }
 
   handleClick(value) {
     this.setState({
@@ -42,14 +47,16 @@ class App extends React.Component {
     }, 1000);
   }
   render() {
+    console.log(this.state);
     return this.state.loading ? (
       <div className="loading">Loading...</div>
     ) : (
       <Wrapper
         handleClick={(valeur) => this.handleClick(valeur)}
         data={this.state.billardList}
-        handleModal={() => this.handleModal()}
+        handleModal={this.handleModal}
         handleDark={() => this.handleDark()}
+        dark={this.state.dark}
       >
         {this.state.selectedBillard === null ? (
           <img className="billard-content" src={fond} alt="fond pour home" />

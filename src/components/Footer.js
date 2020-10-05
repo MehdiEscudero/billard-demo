@@ -7,10 +7,7 @@ class Footer extends React.Component {
       <div className="footer">
         <div className="footer-content">
           <div>Made by Mehdi Escudero</div>
-          <button
-            onClick={() => this.props.handleModal(false)}
-            className="contact"
-          >
+          <button onClick={() => this.props.handleModal()} className="contact">
             Contact
           </button>
         </div>

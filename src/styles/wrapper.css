@@ -22,3 +22,7 @@ body {
   align-items: center;
   font-size: x-large;
 }
+
+.dark .menu {
+  background-color: black;
+}
